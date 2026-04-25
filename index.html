@@ -108,9 +108,13 @@
             if (!isNaN(val)) {
                 document.getElementById('doubleResult').innerText = (val * 2).toLocaleString();
                 document.getElementById('halfResult').innerText = (val * 0.5).toLocaleString();
+                document.getElementById('threeResult').innerText = (val * 3).toLocaleString();
+                document.getElementById('zerothreeResult').innerText = (val * 0.3).toLocaleString();
             } else {
                 document.getElementById('doubleResult').innerText = "0";
                 document.getElementById('halfResult').innerText = "0";
+                document.getElementById('threeResult').innerText = "0";
+                document.getElementById('zerothreeResult').innerText = "0";
             }
         }
 
