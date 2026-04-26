@@ -67,10 +67,10 @@
         <p>得点を入力：
             <input type="number" id="baseNum" oninput="calcMultiples()" placeholder="0">
         </p>
-        <p>テニス（２倍）： <span id="doubleResult" class="result-text">0</span></p>
-        <p>バレーボール（０．５倍）： <span id="halfResult" class="result-text">0</span></p>
-        <p>卓球（３倍）： <span id="threeResult" class="result-text">0</span></p>
-        <p>サッカー（０．３倍）： <span id="zerothreeResult" class="result-text">0</span></p>
+        <p>モルック棒（２倍）： <span id="doubleResult" class="result-text">0</span></p>
+        <p>テニス（５倍）： <span id="halfResult" class="result-text">0</span></p>
+        <p>サッカー（１倍）： <span id="threeResult" class="result-text">0</span></p>
+        <p>三段攻撃（７倍）： <span id="zerothreeResult" class="result-text">0</span></p>
     </div>
 
     <div class="calculator-box">
@@ -107,9 +107,9 @@
             const val = parseFloat(document.getElementById('baseNum').value);
             if (!isNaN(val)) {
                 document.getElementById('doubleResult').innerText = (val * 2).toLocaleString();
-                document.getElementById('halfResult').innerText = (val * 0.5).toLocaleString();
-                document.getElementById('threeResult').innerText = (val * 3).toLocaleString();
-                document.getElementById('zerothreeResult').innerText = (val * 0.3).toLocaleString();
+                document.getElementById('halfResult').innerText = (val * 5).toLocaleString();
+                document.getElementById('threeResult').innerText = (val * 1).toLocaleString();
+                document.getElementById('zerothreeResult').innerText = (val * 7).toLocaleString();
             } else {
                 document.getElementById('doubleResult').innerText = "0";
                 document.getElementById('halfResult').innerText = "0";
